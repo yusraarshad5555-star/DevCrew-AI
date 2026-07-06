@@ -1,0 +1,1 @@
+[Ollama Error] Failed to connect to local Ollama server at http://localhost:11434/api/generate. Is Ollama running?

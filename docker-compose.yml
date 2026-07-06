@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: devcrew_backend
+    command: uvicorn devcrew_ai.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      - LLM_PROVIDER=mock
+      - BACKEND_HOST=0.0.0.0
+      - BACKEND_PORT=8000
+      - WORKSPACE_DIR=/app/generated_projects
+      - DB_PATH=/app/devcrew_ai.db
+    volumes:
+      - .:/app
+      - db_data:/app/db
+
+  frontend:
+    build: .
+    container_name: devcrew_frontend
+    command: streamlit run streamlit_app/app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    environment:
+      - BACKEND_HOST=backend
+      - BACKEND_PORT=8000
+    depends_on:
+      - backend
+    volumes:
+      - .:/app
+
+volumes:
+  db_data:
