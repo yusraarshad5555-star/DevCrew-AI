@@ -254,7 +254,7 @@ generated_projects/
 
 # 🚀 Getting Started
 
-## Clone Repository
+ ## Clone Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/DevCrew-AI.git
@@ -328,13 +328,7 @@ http://localhost:8501
 
 # 📸 Screenshots
 
-Add screenshots here:
-
-- Dashboard
-- Workflow Logs
-- Generated Code
-- Architecture
-- Final Project
+<img width="1893" height="1005" alt="Image" src="https://github.com/user-attachments/assets/6e12bd07-69f3-487d-ae22-59317eaf2b4c" />
 
 ---
 
