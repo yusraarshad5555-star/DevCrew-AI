@@ -342,7 +342,7 @@ Add screenshots here:
 
 A complete demonstration video is available in the Kaggle submission.
 
----
+<img width="1894" height="1006" alt="Image" src="https://github.com/user-attachments/assets/62b49945-ab61-4e47-9e12-c34d1bd18249" />
 
 # 📈 Future Improvements
 
